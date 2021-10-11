@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".modules.profile.view.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/conditionLabelTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/conditions"
+            android:textAppearance="?textAppearanceSearchResultTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ListView
+            android:id="@+id/conditionsListView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/conditionLabelTv" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/medicationsLabelTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/medications"
+            android:textAppearance="?textAppearanceSearchResultTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/conditionsListView" />
+
+        <ListView
+            android:id="@+id/medicationsListView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicationsLabelTv" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/exercisesLabelTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/exercise_gold"
+            android:textAppearance="?textAppearanceSearchResultTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicationsListView" />
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/goal_rating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exercisesLabelTv" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/goalTrackingLabelTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/goal_tracking"
+            android:textAppearance="?textAppearanceSearchResultTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goal_rating" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/goalTrackingStatusTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/goal_tracking"
+            android:textAppearance="?textAppearanceSearchResultTitle"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goalTrackingLabelTv" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

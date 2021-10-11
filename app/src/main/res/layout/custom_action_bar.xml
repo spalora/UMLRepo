@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+<androidx.appcompat.widget.AppCompatImageButton
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:id="@+id/backbutton"
+        android:backgroundTint="@android:color/white"
+        android:src="@drawable/ic_back">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/title"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="@dimen/margin_2_0"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profile"
+        android:layout_width="30dp"
+        android:layout_centerVertical="true"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_profile_user" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/savebutton"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="?selectableItemBackground"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/save"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@android:color/white"/>
+   <androidx.appcompat.widget.AppCompatImageButton
+       android:id="@+id/logout"
+       android:layout_centerVertical="true"
+       android:layout_width="wrap_content"
+       android:layout_alignParentEnd="true"
+       android:layout_height="wrap_content"
+       android:background="@null"
+       android:visibility="gone"
+       android:src="@drawable/ic_logout" />
+
+</RelativeLayout>

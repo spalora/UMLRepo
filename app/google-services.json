@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "306166891863",
+    "project_id": "simplehealth-504f5",
+    "storage_bucket": "simplehealth-504f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306166891863:android:a30035ce60e1ac320baa12",
+        "android_client_info": {
+          "package_name": "com.bu.simplehealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306166891863-11j7399e33b2qd8i9cmkjt9mahacpaed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwZqtlm_Br8dugWkYGpfuddZkWSPSyMgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306166891863-11j7399e33b2qd8i9cmkjt9mahacpaed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

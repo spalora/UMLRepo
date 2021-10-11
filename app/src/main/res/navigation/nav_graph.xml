@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginSignupFragment">
+
+    <fragment
+        android:id="@+id/loginSignupFragment"
+        android:name="com.bu.simplehealth.modules.authentication.view.LoginSignUpFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_login_signup">
+
+        <action
+            android:id="@+id/action_loginSignupFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+
+        <action
+            android:id="@+id/action_loginSignupFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.bu.simplehealth.modules.authentication.view.ForgotPasswordFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_forgot_password" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.bu.simplehealth.modules.home.view.HomeFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_medicationFragment"
+            app:destination="@id/medicationsFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_conditionsFragment"
+            app:destination="@id/conditionsFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_exercisesFragment"
+            app:destination="@id/exercisesFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_mindGamesFragment"
+            app:destination="@id/mindGamesFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/conditionsFragment"
+        android:name="com.bu.simplehealth.modules.conditions.view.ConditionsFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_conditions" />
+
+    <fragment
+        android:id="@+id/exercisesFragment"
+        android:name="com.bu.simplehealth.modules.exercises.view.ExerciseFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_exercise">
+        <action
+            android:id="@+id/action_exercisesFragment_to_exercisesDetailFragment"
+            app:destination="@id/exercisesDetailFragment" />
+
+        <argument
+            android:name="category"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/exercisesDetailFragment"
+        android:name="com.bu.simplehealth.modules.exercises.view.ExerciseDetailFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_exercise">
+
+
+        <action
+            android:id="@+id/action_exerciseDetailFragment_to_webViewFragment"
+            app:destination="@+id/webViewFragment" />
+
+        <argument
+            android:name="exercise"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.bu.simplehealth.WebViewFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_web_view" />
+
+    <fragment
+        android:id="@+id/medicationsFragment"
+        android:name="com.bu.simplehealth.modules.medications.view.MedicationsFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_medications" />
+
+    <fragment
+        android:id="@+id/mindGamesFragment"
+        android:name="com.bu.simplehealth.modules.mindgames.view.MindGamesFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_mind_games">
+
+        <action
+            android:id="@+id/action_mindGamesFragment_to_webViewFragment"
+            app:destination="@+id/webViewFragment" />
+
+        <argument
+            android:name="exercise"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.bu.simplehealth.modules.profile.view.ProfileFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_profile">
+
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginSignupFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+
+</navigation>

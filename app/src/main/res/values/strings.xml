@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">SimpleHealth</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="password">Password</string>
+    <string name="dob">DOB</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="full_name">Full name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="remember_me">Remember me</string>
+    <string name="my_profile">My Profile</string>
+    <string name="conditions">Conditions</string>
+    <string name="medications">Medications</string>
+    <string name="exercise_gold">My Exercise Goal</string>
+    <string name="goal_tracking">Goal Tracking</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="conditions_title">Please select the checkbox for conditions you would like to receive notifications</string>
+    <string name="save">Save</string>
+    <string name="exercises">Exercises</string>
+    <string name="mind_games">Mind Games</string>
+    <string name="password_updated">Password Updated Successfully.</string>
+    <string name="enter_valid_username_password">Please Enter valid Username or Password</string>
+
+    <string name="strength">Strength</string>
+    <string name="five_mg">5mg</string>
+    <string name="ten_mg">10mg</string>
+    <string name="other">other</string>
+    <string name="dont_indicate">Don\'t indicate</string>
+
+    <string name="frequency_title">How often do you  take it?</string>
+    <string name="once_daily">Once daily</string>
+    <string name="twice_daily">Twice daily</string>
+
+
+
+
+</resources>

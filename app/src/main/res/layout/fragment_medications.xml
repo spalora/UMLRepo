@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        style="@style/CardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/medication_icon"
+                android:layout_width="30dip"
+                android:layout_height="35dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/ic_medicine" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/medication_name"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@+id/medication_icon"
+                android:hint="Medication name"
+                android:textSize="12dip" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/strength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medication_name"
+                android:layout_marginTop="20dip"
+                android:text="@string/strength" />
+
+            <RadioGroup
+                android:id="@+id/strength_radio_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/strength"
+                android:layout_marginTop="10dip"
+                android:checkedButton="@+id/five_mg_btn">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/five_mg_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/five_mg"
+                    tools:useMaterialThemeColors="true" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/ten_mg_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ten_mg"
+                    tools:useMaterialThemeColors="true" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/other_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/other"
+                    tools:useMaterialThemeColors="true" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/dont_indicate_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/dont_indicate"
+                    tools:useMaterialThemeColors="true" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/strength_radio_grp"
+                android:layout_marginTop="20dip"
+                android:text="@string/frequency_title" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/frequency_radio_grp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frequency"
+                android:layout_marginTop="10dip"
+                android:checkedButton="@+id/once_daily">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/once_daily"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/once_daily"
+                    tools:useMaterialThemeColors="true" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="match_parent"
+                    android:id="@+id/twice_daily"
+                    android:layout_height="match_parent"
+                    android:text="@string/twice_daily"
+                    tools:useMaterialThemeColors="true" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="match_parent"
+                    android:id="@+id/other"
+                    android:layout_height="match_parent"
+                    android:text="@string/other"
+                    tools:useMaterialThemeColors="true" />
+            </RadioGroup>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

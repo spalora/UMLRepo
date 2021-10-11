@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#5995F0</color>
+    <color name="primaryLightColor">#4877b1</color>
+    <color name="primaryDarkColor">#002554</color>
+    <color name="secondaryColor">#D0D7DA</color>
+    <color name="secondaryLightColor">#F2F5F7</color>
+    <color name="secondaryDarkColor">#53585f</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="positive_green">#689F38</color>
+    <color name="negative">#F44336</color>
+    <color name="splash_bg">#F0F0F0</color>
+</resources>
